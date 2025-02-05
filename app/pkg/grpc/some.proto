@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package = ".";
+
+package payout_proto;
+
+service SomeExample {
+    rpc CreateSomething(SomethingRequest) returns (SomethingResponse) {}
+}
+
+message SomethingRequest {
+    string SomeField = 1;
+}
+
+message SomethingResponse {
+    int64 SomeField = 1;
+}
